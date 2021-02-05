@@ -8,7 +8,7 @@ int main()
     char b[] = " Мир";
     char f[] = "%s";
 
-    _asm
+    _asm  
     {
         lea eax, s
         push eax
@@ -16,7 +16,7 @@ int main()
         push ebx
         call scanf
         add esp, 8
-
+        add esp, e
     }
 }
 
